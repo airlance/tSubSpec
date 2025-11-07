@@ -1,0 +1,42 @@
+"language_en-US" = "English";
+"language_ru-RU" = "Русский";
+
+"selectLanguage" = "Пожалуйста, выберите язык";
+"selectLanguageDescription" = "Вы сможете выбрать его позже в Настройках приложения";
+"continueButton" = "Продолжить";
+"doneButton" = "Готово";
+"cancelButton" = "Отмена";
+
+"welcomeText" = "✈️ Добро пожаловать на борт!";
+"welcomeDescriptionText" = "Приветствую тебя, странник! Представляем тебе наше новое приложение, которое позволит тебе без труда находить авиабилеты по выгодным ценам. У тебя будет возможность выбирать дату вылета и место прибытия - наш сервис подберет для тебя самые выгодные варианты\n\nЕсли ты готов, нажми Продолжить. Далее у тебя будут уточнены некоторые моменты по поводу страны проживания и валюты, в которой ты привык расчитываться";
+
+"countrySelectorTitle" = "Выберите вашу страну";
+
+"currencySelectorTitle" = "Выберите вашу валюту";
+
+"flightSearchTabText" = "Поиск билетов";
+"preferencesTabText" = "Настройки";
+
+"fromText" = "Страна отправления: ";
+"toText" = "Страна прибытия: ";
+"datePickerTitleText" = "Выберите дату вылета";
+"dateText" = "Дата вылета: ";
+"searchButtonText" = "Найти рейсы";
+
+"fromLPlaceholderText" = "Выберите страну...";
+"toPlaceholderText" = "Выберите страну...";
+"dateAnyText" = "Любая дата";
+
+"searchCountryPlaceholderText" = "Поиск страны...";
+"searchResultsTitle" = "Результаты поиска";
+"searchResultsFrom" = "Вылет:";
+"searchResultsTo" = "Прибытие:";
+
+"preferencesTitle" = "Настройки";
+"preferencesLanguage" = "Язык приложения";
+"preferencesCountry" = "Страна";
+"preferencesCurrency" = "Валюта";
+
+"okText" = "Понятно";
+"errorTitleText" = "Ошибка";
+"defaultErrorText" = "При выполнении запроса что-то пошло не так";

@@ -1,0 +1,42 @@
+"language_en-US" = "English";
+"language_ru-RU" = "Русский";
+
+"selectLanguage" = "Please, select the language";
+"selectLanguageDescription" = "You'll can change it later in User preferences";
+"continueButton" = "Continue";
+"doneButton" = "Done";
+"cancelButton" = "Cancel";
+
+"welcomeText" = "✈️ Welcome on board!";
+"welcomeDescriptionText" = "Greetings, wanderer! We present you our new application that will allow you to easily find flights at great prices. You will be able to choose the date of departure and place of arrival - our service will select the most favorable options for you.\n\nIf you are ready, click Continue. Further, you will clarify some points about the country of residence and the currency in which you are used to calculating";
+
+"countrySelectorTitle" = "Select your country";
+
+"currencySelectorTitle" = "Select your currency";
+
+"flightSearchTabText" = "Flight search";
+"preferencesTabText" = "Preferences";
+
+"fromText" = "Departure: ";
+"toText" = "Arrival: ";
+"dateText" = "Date: ";
+"datePickerTitleText" = "Select flight date";
+"searchButtonText" = "Find flights";
+
+"fromLPlaceholderText" = "Select country...";
+"toPlaceholderText" = "Select country...";
+"dateAnyText" = "Any date";
+
+"searchCountryPlaceholderText" = "Search country...";
+"searchResultsTitle" = "Flight search results";
+"searchResultsFrom" = "Origin:";
+"searchResultsTo" = "Departure:";
+
+"preferencesTitle" = "Preferences";
+"preferencesLanguage" = "Language";
+"preferencesCountry" = "Country";
+"preferencesCurrency" = "Currency";
+
+"okText" = "Okay";
+"errorTitleText" = "Error";
+"defaultErrorText" = "Something went wrong";
