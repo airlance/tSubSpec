@@ -1,1 +1,99 @@
 
+// ============================================
+// FILE: cmd/server.go
+// ============================================
+
+
+// ============================================
+// FILE: cmd/upload.go
+// ============================================
+
+
+
+/*
+Clean Architecture Structure:
+
+project/
+├── cmd/                                    # Application Entry Points
+│   ├── root.go
+│   ├── server.go
+│   └── upload.go
+│
+├── internal/
+│   ├── domain/                            # Enterprise Business Rules
+│   │   ├── entity/                        # Business Entities
+│   │   │   ├── job.go
+│   │   │   └── media.go
+│   │   ├── repository/                    # Repository Interfaces
+│   │   │   ├── job_repository.go
+│   │   │   ├── storage_repository.go
+│   │   │   └── queue_repository.go
+│   │   └── service/                       # Domain Services
+│   │       └── validation_service.go
+│   │
+│   ├── application/                       # Application Business Rules
+│   │   ├── dto/                          # Data Transfer Objects
+│   │   │   ├── upload_dto.go
+│   │   │   └── status_dto.go
+│   │   └── usecase/                      # Use Cases (Interactors)
+│   │       ├── upload_usecase.go
+│   │       ├── status_usecase.go
+│   │       └── download_usecase.go
+│   │
+│   ├── infrastructure/                    # Frameworks & Drivers
+│   │   ├── config/
+│   │   │   └── config.go
+│   │   ├── persistence/                  # Repository Implementations
+│   │   │   └── memory_job_repository.go
+│   │   ├── storage/
+│   │   │   └── minio_storage.go
+│   │   └── queue/
+│   │       └── rabbitmq_queue.go
+│   │
+│   └── presentation/                      # Interface Adapters
+│       └── http/
+│           ├── handler/                   # HTTP Handlers
+│           │   ├── upload_handler.go
+│           │   ├── status_handler.go
+│           │   └── download_handler.go
+│           └── router/
+│               └── router.go
+│
+├── go.mod
+├── go.sum
+├── main.go
+└── README.md
+
+Key Principles Applied:
+
+1. Dependency Rule:
+   - Dependencies point inward
+   - Domain layer has NO dependencies
+   - Application layer depends only on Domain
+   - Infrastructure depends on Domain interfaces
+   - Presentation depends on Application
+
+2. Separation of Concerns:
+   - Domain: Pure business logic (entities, interfaces)
+   - Application: Use cases orchestrating business flows
+   - Infrastructure: Technical implementations (DB, APIs, etc)
+   - Presentation: User interface adapters (HTTP handlers)
+
+3. Dependency Inversion:
+   - Domain defines interfaces (repositories)
+   - Infrastructure implements interfaces
+   - Dependencies injected at startup
+
+4. Single Responsibility:
+   - Each layer has one reason to change
+   - Handlers only handle HTTP concerns
+   - Use cases only orchestrate business logic
+   - Repositories only handle data access
+
+5. Benefits:
+   - Testable (can mock repositories)
+   - Maintainable (clear structure)
+   - Flexible (easy to swap implementations)
+   - Independent of frameworks
+*/
+
