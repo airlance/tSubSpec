@@ -1,0 +1,7 @@
+module ogg [system] {
+    umbrella "include/ogg"
+
+    export *
+    module * { export * }
+}
+
