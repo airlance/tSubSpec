@@ -1,0 +1,40 @@
+PODS:
+  - DatePickerDialog (4.0)
+  - MaterialComponents/ActivityIndicator (124.0.1):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 4.0)
+  - MaterialComponents/Palettes (124.0.1)
+  - MaterialComponents/private/Application (124.0.1)
+  - MDFInternationalization (2.0.0)
+  - MotionAnimator (4.0.1):
+    - MotionInterchange (~> 3.0)
+  - MotionInterchange (3.0.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - DatePickerDialog
+  - MaterialComponents/ActivityIndicator
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - DatePickerDialog
+    - MaterialComponents
+    - MDFInternationalization
+    - MotionAnimator
+    - MotionInterchange
+    - SnapKit
+
+SPEC CHECKSUMS:
+  DatePickerDialog: ccff2f91ff7a018057a4d72fa5ad6de49c8cb0cd
+  MaterialComponents: c3f4e9d8e9cf9f02ab94a8b4823539fd9c7bf505
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MotionAnimator: 5f99d7c9592928c0f28a66283eda9c3b657dc480
+  MotionInterchange: 13adae439b377e31d1674cc165539d50e1d1566a
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: df8a1acb0cca94eefda8b34d70ac310933fb2a28
+
+COCOAPODS: 1.16.2

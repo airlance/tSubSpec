@@ -1,0 +1,42 @@
+import Foundation
+
+// MARK: - {{ module_info.name }}Presenter implementation
+
+final class {{ module_info.name }}Presenter {
+
+    // MARK: Properties
+
+    weak var view: {{ module_info.name }}ViewInput?
+    private let interactor: {{ module_info.name }}InteractorInput
+    private let moduleOutput: {{ module_info.name }}ModuleOutput 
+    private let settings: {{ module_info.name }}Settings
+
+    // MARK: Initializers
+
+    init(
+        moduleOutput: {{ module_info.name }}ModuleOutput,
+        interactor: {{ module_info.name }}InteractorInput,
+        settings: {{ module_info.name }}Settings
+    ) {
+        self.interactor = interactor
+        self.moduleOutput = moduleOutput
+        self.settings = settings
+    }
+}
+
+// MARK: - {{ module_info.name }}InteractorOutput implementation
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}InteractorOutput {
+    func viewIsReady() {
+    }
+}
+
+// MARK: - {{ module_info.name }}ViewOutput implemenetation
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
+}
+
+// MARK: - {{ module_info.name }}ModuleInput implementation
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ModuleInput {
+}
