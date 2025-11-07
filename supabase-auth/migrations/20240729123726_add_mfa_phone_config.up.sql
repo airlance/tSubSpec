@@ -1,0 +1,12 @@
+-- do $$ begin
+--     alter type factor_type add value 'phone';
+-- exception
+--     when duplicate_object then null;
+-- end $$;
+
+
+alter table mfa_factors add column if not exists phone text unique default null;
+alter table mfa_challenges add column if not exists otp_code text null;
+
+
+create unique index if not exists unique_verified_phone_factor on mfa_factors (user_id, phone);
